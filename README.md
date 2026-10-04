@@ -6,7 +6,7 @@ Este é um projeto prático focado em resolver um dos problemas mais comuns e co
 
 ## 🎯 O Problema
 O grande desafio deste projeto não é apenas criar um modelo de predição, mas sim lidar com os **dados extremamente desbalanceados**. 
-Nesta base de dados, descobri que existe cerca de [ PREENCHA: coloque aqui aquela proporção que calculamos, ex: 577 ] transações normais para cada 1 fraude. 
+Nesta base de dados, descobri que existe cerca de Existe cerca de 578 transações normais para cada 1 fraude. 
 
 Por causa disso, usar a "Acurácia" como métrica é uma armadilha. Um modelo que chutar que *nenhuma* transação é fraude acertaria 99,8% das vezes, mas seria inútil para o negócio. Por isso, a avaliação deste projeto foi focada no **Recall** (capacidade de encontrar as fraudes) e na **Precisão**.
 
@@ -20,16 +20,15 @@ Para garantir que os modelos pudessem aprender corretamente, realizei as seguint
 ## 🤖 Comparação dos Modelos
 Testei diferentes abordagens e algoritmos. Aqui estão os resultados focados na Classe 1 (Fraudes):
 
-1. **Regressão Logística (Baseline):** [ PREENCHA: Coloque o Recall e o F1 que deram no primeiro print ]
-2. **Random Forest (com class_weight='balanced'):** [ PREENCHA: Coloque o Recall e o F1 dele ]
-3. **XGBoost (com limiar ajustado para 0.20):** [ PREENCHA: Coloque o Recall e o F1 dele ]
-4. **XGBoost (treinado com SMOTE):** [ PREENCHA: Coloque o Recall e o F1 que deram o melhor resultado ]
-
-O melhor modelo foi o [ PREENCHA: Qual você escolheu? ], pois conseguiu aumentar a detecção de fraudes sem derrubar tanto a precisão.
+1. **Regressão Logística (Baseline):** 
+2. **Random Forest (com class_weight='balanced'):** 
+3. **XGBoost (com limiar ajustado para 0.20):** 
+4. **XGBoost (treinado com SMOTE):** 
+O melhor modelo foi o XXXYYYY, pois conseguiu aumentar a detecção de fraudes sem derrubar tanto a precisão.
 
 ## 🧠 Explicabilidade com SHAP
 Para não deixar o modelo como uma "caixa preta", utilizei a biblioteca SHAP para entender como as decisões foram tomadas.
-- O gráfico Beeswarm revelou que as variáveis [ PREENCHA: Olhe no gráfico que gerou e escreva o nome de umas 2 ou 3 variáveis V que ficaram no topo da lista ] são as que mais impactam na decisão de apontar uma transação como fraude.
+- O gráfico Beeswarm revelou que as variáveis são as que mais impactam na decisão de apontar uma transação como fraude.
 
 ## 🚀 O que fiz de diferente (Meu toque pessoal)
 Em relação à abordagem inicial sugerida na aula, eu adicionei:
